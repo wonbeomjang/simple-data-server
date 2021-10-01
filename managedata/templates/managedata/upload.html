@@ -1,0 +1,5 @@
+<form method="POST" action="{% url 'data_upload' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input id="data_file" type="file" name="data_file" multiple>
+    <input type="submit" value="작성하기">
+</form>

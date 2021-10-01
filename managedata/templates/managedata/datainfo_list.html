@@ -1,0 +1,11 @@
+{% load filename %}
+
+<tabke>
+    {% for item in datainfo_list %}
+    <tr>
+        <td>{{ item|filename }} | </td>
+        <td>{{ item.upload_at }} | </td>
+        <td><a href="{{ item.data_file.url }}" download  class="btn btn-dark float-right">download</a></td>
+    </tr>
+    {% endfor %}
+</tabke>
